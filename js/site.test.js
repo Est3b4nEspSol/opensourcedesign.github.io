@@ -95,7 +95,7 @@ describe('Pruebas para site (único archivo con algo de carnita)', () => {
 
     
   // -------------------------------
-  // 1. Navbar scroll behavior (12 tests)
+  // 1. Navbar scroll behavior 
   // -------------------------------
 
   test('removeClass no se llama si clase no existe', () => {
@@ -176,13 +176,6 @@ test('mantiene clase si sigue scroll > 50', () => {
   $(window).trigger('scroll');
   expect($('.navbar-fixed-top').hasClass('top-nav-collapse')).toBe(true);
 });
-
-
-
-
-  
-
-
 
 
   test('remueve clase top-nav-collapse cuando scroll <= 50', () => {
@@ -348,7 +341,7 @@ test('mantiene la clase al seguir scrolleando más abajo', () => {
 
 
   // -------------------------------
-  // 2. Page scroll con jQuery Easing (10 tests)
+  // 2. Page scroll con jQuery Easing 
   // -------------------------------
 
   test('click en enlace page-scroll previene comportamiento por defecto', () => {
@@ -525,7 +518,7 @@ test('click activa animación con scrollTop', () => {
 
   
   // -------------------------------
-  // 3. Scroll-to-top button (4 tests)
+  // 3. Scroll-to-top button 
   // -------------------------------
 
  test('retorna false al hacer click', () => {
@@ -559,7 +552,7 @@ test('click activa animación con scrollTop', () => {
 
 
   // -------------------------------
-  // 4. AJAX y jobs feed (7 tests)
+  // 4. AJAX y jobs feed 
   // -------------------------------
   test('agrega máximo de 6 items', () => {
     const xml = Array.from({ length: 10 })
@@ -653,7 +646,7 @@ test('click activa animación con scrollTop', () => {
 
 
   // -------------------------------
-  // 5. Media query (11 tests)
+  // 5. Media query 
   // -------------------------------
 
   test('agrega listener correctamente al usar matchMedia', () => {
@@ -852,4 +845,5 @@ test('no falla si $.ajax devuelve error', () => {
 
 
   
+
 });
